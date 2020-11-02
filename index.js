@@ -128,6 +128,12 @@ function remove (file, enc, cb) {
             styleDef.text('\n' + css.stringify(parsed) + '\n');
         });
     };
+    
+    if (opt.removeTitle) {
+        $('title').each(fucntion(titleEl) {
+            titleEl.remove();
+        });
+    }
 
     // In non-streaming mode: Write file to specified output directory (grunt)
     // In streaming mode: Overwrite file contents and push it furhter (gulp)
