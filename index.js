@@ -130,7 +130,7 @@ function remove (file, enc, cb) {
     };
     
     if (opt.removeTitle) {
-        $('title').each(fucntion(titleEl) {
+        $('title').each(function(titleEl) {
             titleEl.remove();
         });
     }
